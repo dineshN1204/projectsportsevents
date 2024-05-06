@@ -44,6 +44,10 @@ export default function ContactUs() {
                 </div>
 
             </div>
+            
+            <div className='mb-5'>
+            <p className='copyrights'>Copyright &copy; 2024 Kovai Sports Events. All Rights Reserved. | Created by - Dinesh, Vicky and Raghul </p>
+            </div>
 
 
 

@@ -10,9 +10,12 @@ export default function Profile() {
         navigate('/')
     }
     return (
-        <div>
-            Welcome {auth.user}
-            <button onClick={handleLogout}>Logout</button>
+        <div className='profile-div'>
+        <img className='profile-img' src='https://getwallpapers.com/wallpaper/full/2/f/0/1230746-best-sports-wallpaper-2560x1600-windows-xp.jpg'></img>
+            <div className='profile-div1'>
+                <h1>Welcome</h1> <h3>{auth.user}</h3> 
+                <button className='btn-logout' onClick={handleLogout}>Logout</button>
+            </div>
         </div>
     )
 }

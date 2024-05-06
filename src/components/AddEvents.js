@@ -10,8 +10,9 @@ export default function AddEvents() {
     useEffect(() => {
         inputRef.current.focus()
     }, [])
+    
     const handleAddEvents = (e) => {
-        e.preventDefault()
+        e.preventDefault() //to prevent the page reloading when submitting the form
         if (eventName && category && description !== "") {
             axios.post(`http://localhost:3001/users`, {
                 eventName, description, category
@@ -22,7 +23,7 @@ export default function AddEvents() {
         setEventName('');
         setDescription('');
         setCategory('')
-        inputRef.current.focus()
+        inputRef.current.focus()// when page reloading it focus to the selected inpt field
     }
     return (
 
